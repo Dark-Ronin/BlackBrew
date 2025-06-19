@@ -29,10 +29,11 @@ h1, h2, h5 {
 }
 
 .card {
-  background-color: #1f1f1f;
-  color: #f0e6d2;
-  border: 1px solid #c2a343;
-  transition: transform 0.3s ease;
+  background-color: rgba(30, 30, 47, 0.85);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
 .card:hover {
@@ -81,4 +82,54 @@ footer {
 .Centralizar {
     display: flex;
     justify-content: center;
+}
+
+/* Área geral do commentbox */
+.commentbox {
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  margin-top: 2rem;
+}
+
+/* Texto e links */
+.commentbox * {
+  color: #f1f1f1 !important;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fundo dos campos */
+.commentbox textarea,
+.commentbox input {
+  background-color: #2c2c3e !important;
+  color: #f8f8f8 !important;
+  border: 1px solid #444 !important;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+/* Botões */
+.commentbox button {
+  background-color: #6f42c1 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+.commentbox button:hover {
+  background-color: #5a34a2 !important;
+}
+
+/* Bordas e separadores */
+.commentbox hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Avatares (caso apareçam) */
+.commentbox .cb-avatar {
+  border-radius: 50%;
+  border: 2px solid #6f42c1;
 }
